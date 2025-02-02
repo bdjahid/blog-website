@@ -16,8 +16,7 @@ html{
     background-color: #fafafa;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    /* font-family: 'Italianno',cursive; */
-     font-family: "Roboto", sans-serif; 
+    font-family: "Roboto", sans-serif; 
 }
 body{
     background-color: #fff;
@@ -29,6 +28,34 @@ body{
 .text-justify{
     text-align: justify;
 }
+.text-white {
+    color: #fff;
+  }
+.section-heading {
+    font-size: 8rem;
+    text-align: center;
+    font-family: "Italianno", cursive; 
+  }
+  .section-center {
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .btn {
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
 /* header start here */
 header{
     display: flex;
@@ -106,7 +133,44 @@ nav li:hover{
   }
 /* banner end here */
 
+/* blog-about starts here  */
+#blog-about {
+  background-color: #4c4c4c;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+}
 
+.card {
+  flex: 1;
+  border-radius: 0.6rem;
+  background-color: #a09d9d;
+  padding: 3rem 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card-header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.card-description {
+  padding: 0.4rem 0;
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+.card-btn {
+  align-self: center;
+  width: 80%;
+}
+/* blog-about ends here  */
 
 
 
@@ -121,7 +185,13 @@ nav li:hover{
         flex-direction: column;
         align-items: center;
         margin-bottom: 5rem;
-    }   
+    }
+    .card-container{
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
+     
 }
 @media(max-width:768px){
 html{
@@ -130,6 +200,10 @@ html{
 #blog-banner-section article{
    width: 80%;
 }
+.card-container{
+    width: 80%;
+    /* flex-direction: column; */
+} 
 }
 @media(max-width:600px){
     html{
@@ -146,12 +220,25 @@ nav li{
     margin-right: 0;
     margin: 1rem 0;
 }
-/* #blog-banner-section {
+ #blog-banner-section {
     min-height: auto;
 } 
 #blog-banner-section article{
    width: 90%;
-}  */
+}
+.banner-img{
+    width: 100%;
+}
+#blog-about{
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 90%;
+}
 }
 @media(max-width:400px){
 
