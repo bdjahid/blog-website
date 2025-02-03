@@ -294,7 +294,25 @@ nav li:hover{
   }
   /* contact section ends here  */
   
-
+/* footer starts here  */
+footer {
+    background-color: black;
+    padding: 1rem;
+  
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright-text {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .footer-icon {
+    font-size: 2.5rem;
+  }
+  /* footer ends here  */
+  
 
 /* responsive start here */
 @media(max-width:992px){
